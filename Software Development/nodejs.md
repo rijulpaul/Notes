@@ -1,9 +1,9 @@
 # Important Node Modules And Their Functioning
 
 ## Topics:
-1. [File System](#filesystem)
+1. [File System](#file-system)
 2. [HTTP and HTTPS](#http-and-https) **add agents and sockets**
-3. [Stream](#stream)
+3. [Streams](#streams)
 4. [Path](#path)
 5. [Timers](#timers)
 6. [URL](#url)
@@ -448,9 +448,7 @@ describe('Math Utils', () => {
 ### Test Execution
 ```bash
 node --test
-```
 
-```bash
 node --test --watch
+# This watches for file changes and re-runs tests automatically.
 ```
-> This watches for file changes and re-runs tests automatically.
