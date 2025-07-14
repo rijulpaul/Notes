@@ -52,7 +52,7 @@ const fs = require('fs/promise'); //promise based implementation
 **http**: Lets you create web servers or make HTTP requests (insecure).
 **https**: Same as http, but uses SSL/TLS encryption for secure communication.
 
-### Basic **http** Server
+### Basic http Server
 ```javascript
 const http = require('http');
 
@@ -66,7 +66,7 @@ server.listen(3000, () => {
 });
 ```
 
-### Basic **https** Server
+### Basic https Server
 ```javascript
 const http = require('https';
 const fs = require('fs');
@@ -85,6 +85,24 @@ server.listen(443, () => {
   console.log('Server running at http://localhost:3000');
 });
 ```
+
+### Agents
+An Agent manages connection persistence and re-use for requests — useful for performance.
+```javascript
+const agent = new http.Agent({
+  keepAlive: true,
+  maxSockets: 10
+});
+
+http.get({ host: 'example.com', agent }, (res) => {
+  // Request made using pooled connection
+});
+```
+
+**Use Cases:**
+- Making many requests to the same server
+- Optimizing throughput
+- Preventing DNS and TCP handshake overhead
 
 ## Streams
 A Stream is like a flowing data pipe — it allows data to be processed piece-by-piece instead of loading it all into memory at once.
