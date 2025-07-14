@@ -2,7 +2,7 @@
 
 ## Topics:
 1. [File System](#file-system)
-2. [HTTP and HTTPS](#http-and-https) **add agents and sockets**
+2. [HTTP and HTTPS](#http-and-https)
 3. [Streams](#streams)
 4. [Path](#path)
 5. [Timers](#timers)
@@ -49,7 +49,7 @@ const fs = require('fs/promise'); //promise based implementation
 
 
 ## HTTP and HTTPS
-**http**: Lets you create web servers or make HTTP requests (insecure).
+**http**: Lets you create web servers or make HTTP requests (insecure).  
 **https**: Same as http, but uses SSL/TLS encryption for secure communication.
 
 ### Basic http Server
