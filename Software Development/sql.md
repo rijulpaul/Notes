@@ -23,6 +23,7 @@ WHERE condition;
 ```sql
 DELETE FROM table_name
 WHERE condition;
+
 ```
 - **CREATE TABLE** - used to create a new table
 ```sql
@@ -212,7 +213,6 @@ FROM table_name;
 ```
 
 - **MAX** - used to return the maximum value in a specific column
-
 ```sql
 SELECT MAX(column)
 FROM table_name;
