@@ -1,4 +1,4 @@
-# Web Security
+# API Security
 ## SQL Injection (SQLi)
 - **What it is**: Attacker injects malicious SQL via input fields or query params.
 - **Impact**: Steal/modify/delete data, escalate privileges.
