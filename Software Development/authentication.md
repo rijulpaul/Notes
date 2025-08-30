@@ -28,6 +28,7 @@ Authorization = deciding what they can access
 - Delegated auth used for "Login with Google/GitHub/etc."
 - OAuth 2.0 - Authorization framework (accessing resources on behald of user)
 - OIDC - extension for authentication (who the user is)
+- Pros - Don't have to share credentials directly with the application and easier to manage session and content access. 
 
 ## API keys
 - Static secret string identifying client.
